@@ -170,6 +170,17 @@ footer{
 	height: 200px;
 }
 
+.second-section {
+	margin-top: 25px;
+}
+.second-section img{
+	width: 300px;
+	height: 300px;
+	float: left;
+	margin: 0 10px 10px 0;
+
+}
+
 /*
 *********************************************************************************************
 ************************************SLIDER INFORMACION***************************************
@@ -247,7 +258,86 @@ footer{
 /*
 
 **********************************************************************************************
-***************************************** SLIDER *********************************************
+*****************************************Pasatiempos******************************************
+**********************************************************************************************
+*/   
+
+ .pasatiempos-contenido{
+ 	background-color: rgba(255,255,255,0.7);
+	padding: 0 100;
+	margin: 0;
+	padding-left: 50px;
+	padding-top: 50px;
+ }
+
+ .pasatiempos-contenido img{
+ 	margin:20px;
+ 	width: 200px;
+ 	height: 200px;
+ 	border-radius: 100%;
+ }
+
+ 
+
+ .pasatiempos-contenido img:hover{
+ 	animation-name: gira-y-quedate;
+  	animation-duration: 1s;
+  	animation-iteration-count 1;
+  	animation-fill-mode: forwards;
+ }
+
+ @keyframes gira-y-quedate {
+  from {
+     transform:rotateY(0deg);
+  }
+  to {
+     transform:rotateY(170deg);
+  }
+}
+
+/*
+
+**********************************************************************************************
+***************************************** MODAL **********************************************
+**********************************************************************************************
+
+*/
+
+
+/* base semi-transparente */
+    .overlay{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100% ;
+        background: #000;
+        z-index:1001;
+		opacity:.75;
+        -moz-opacity: 0.75;
+        filter: alpha(opacity=75);
+    }
+	
+    /* estilo para lo q este dentro de la ventana modal */
+    .modal {
+        position: absolute;
+        top: 25%;
+        left: 25%;
+        width: 50%;
+        height: 100%;
+        padding: 16px;
+        background: #fff;
+		color: #333;
+        z-index:1002;
+        overflow: auto;
+    }
+ 
+
+
+/*
+
+**********************************************************************************************
+***************************************** SLIDER-INDEX****************************************
 **********************************************************************************************
 
 */
